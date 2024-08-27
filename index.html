@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8373c287c4.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+        .manrope-unique {
+            font-family: "Manrope", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+    <title>BB Resorts</title>
+</head>
+<body class="manrope-unique">
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'green-k' : '#ABEF5F',
+              }
+            }
+          }
+        }
+    </script>
+    <header class="md:container mx-auto overflow-x-hidden bg-gradient-to-t from-[#ffffff] to-[#ffffff00]">
+        <nav class="md:flex md:items-center md:justify-between md:mx-auto px-4 lg:px-20 xl:px-28 mb-10">
+            <div class="navbar md:container bg-base-100 flex justify-between items-center w-full max-w-full">
+                <!-- "Rinterio" Logo -->
+                <a class="flex items-center rounded-lg p-3 gap-2 text-[#212121] text-3xl leading-10 font-extrabold hover:cursor-pointer">
+                    <div class="justify-center items-start p-[10px] rounded-[32px] bg-green-k">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 -rotate-45" fill="black" viewBox="0 0 448 512">
+                            <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/>
+                        </svg>
+                    </div> 
+                    Rinterio
+                </a>
+    
+                <!-- Center Menu for Desktop -->
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal gap-2 px-1">
+                        <li><a href="#" class="font-extrabold text-lg leading-5 text-[#494949]">Home</a></li>
+                        <li><a href="#" class="text-lg leading-5">Services</a></li>
+                        <li><a href="#" class=" text-lg leading-5">Portfolio</a></li>
+                        <li><a href="#" class="text-lg leading-5">Blogs</a></li>
+                        <li><a href="#" class="text-lg leading-5">Contact Us</a></li>
+                    </ul>
+                </div>
+    
+                <div class="flex gap-3 items-center">
+                    <!-- Icons for Shopping Cart and Search -->
+                    <div class="hidden sm:flex gap-3 items-center">
+                        <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                            <div class="indicator">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+                            </div>
+                        </div>
+                        <button class="btn btn-ghost btn-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                        </button>
+                    </div>
+    
+                    <!-- Book Consult Button -->
+                    <a class="hidden sm:flex items-center rounded-[32px] p-3 gap-2 text-[#212121] text-lg leading-10 font-extrabold bg-green-k hover:bg-[#8dc64b] hover:cursor-pointer">
+                        Book Consult&nbsp;
+                        <div class="justify-center items-start p-[10px] rounded-[32px] bg-[#1C1C1C]">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 -rotate-45" fill="white" viewBox="0 0 448 512">
+                                <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+    
+                <!-- Mobile Menu -->
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost sm:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content gap-2 bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li><a href="#" class="font-extrabold text-lg leading-5 text-[#494949]">Home</a></li>
+                        <li><a href="#" class="text-lg leading-5">Services</a></li>
+                        <li><a href="#" class=" text-lg leading-5">Portfolio</a></li>
+                        <li><a href="#" class="text-lg leading-5">Blogs</a></li>
+                        <li><a href="#" class="text-lg leading-5">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div> 
+        </nav>
+        <!-- hero section -->
+        <div class="hero min-h-screen flex items-center justify-center">
+            <div class="hero-content text-center">
+              <div class="flex flex-col items-center justify-center gap-6">
+                <img src="assets/banner.png" alt="Banner" class="wx-auto">
+                <h1 class="text-6xl font-extrabold leading-[85px] w-[1000px] text-gray-900 text-center">A barn house of this design has a <br> striking appearance</h1>
+                <p class="py-6 font-medium text-[16px] leading-6 text-[#494949]">
+                    The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.
+                </p>
+                <button class="hidden sm:flex items-center rounded-[32px] p-6 border border-green-k gap-2 text-[#212121] text-lg leading-10 font-extrabold bg-green-k/[0.5] hover:bg-[#8dc64b] hover:cursor-pointer">
+                    View Details&nbsp;
+                    <div class="justify-center items-start p-[10px] rounded-[32px] bg-green-k">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 -rotate-45" fill="black" viewBox="0 0 448 512">
+                            <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/>
+                        </svg>
+                    </div>
+                </button>
+              </div>
+            </div>
+        </div>
+    </header>
+
+</body>
+</html>
